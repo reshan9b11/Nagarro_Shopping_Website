@@ -26,5 +26,6 @@ const PORT=process.env.PORT || 8888
 db.sync()
 .then(() => {
     console.log("Database Created!")
+    server.listen(PORT)
    
 });
