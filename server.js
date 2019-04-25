@@ -22,9 +22,9 @@ server.use('/vendors',vendorRoutes);
 server.use('/users',userRoutes);
 server.use('/carts',cartRoutes);
 
-
+const PORT=process.env.PORT || 8888
 db.sync()
 .then(() => {
     console.log("Database Created!")
-    server.listen(8080);
+   
 });
